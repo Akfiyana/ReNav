@@ -1,0 +1,25 @@
+import React, { Component } from 'react';
+import {View, Text, Image} from 'react-native';
+
+
+class HomeScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {  }
+    }
+    render() { 
+        return (  
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+                <Image 
+                //style={{width:200, height :200}}
+                resizeMode= {'cover'}
+                source={require('./Akfitech.jpeg')}/>
+            <View style={{flex:6, justifyContent:'center', alignItems : 'center'}}>
+                <Text style={{fontSize:20}}>Welcome To Home Screen</Text>
+            </View>
+            </View>
+        );
+    }
+}
+ 
+export default HomeScreen ;
